@@ -5,13 +5,14 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faUser, faHouse, faFolder, faAddressCard} from '@fortawesome/free-solid-svg-icons';
 
 export default function navigation() {
+
   return (
     <div className='container'>
         <section className='navigation'>
             <div className='name-navigation'>
             </div>
-            <li>
-                <ul>
+            <ul>
+                <li>
                     <a href='#'>
                         <div className='navigation-round'>
                             <FontAwesomeIcon icon={faHouse} className='icon-navigation'/>
@@ -20,6 +21,8 @@ export default function navigation() {
                             Home
                         </p>
                     </a>
+                </li>
+                <li>
                     <a href='#'>
                         <div className='navigation-round'>
                             <FontAwesomeIcon icon={faUser} className='icon-navigation'/>
@@ -28,6 +31,8 @@ export default function navigation() {
                             Who I am?
                         </p>
                     </a>
+                </li>
+                <li>
                     <a href='#'>
                         <div className='navigation-round'>
                             <FontAwesomeIcon icon={faAddressCard} className='icon-navigation'/>
@@ -36,6 +41,8 @@ export default function navigation() {
                             Contact Me
                         </p>
                     </a>
+                </li>
+                <li>
                     <a href='#'>
                         <div className='navigation-round purple'>
                             <FontAwesomeIcon icon={faFolder} className='icon-navigation'/>
@@ -44,8 +51,8 @@ export default function navigation() {
                             Portfolio
                         </p>
                     </a>
-                </ul>
-            </li>
+                </li>
+            </ul>
     </section>
     </div>
   )

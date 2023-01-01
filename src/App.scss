@@ -1,0 +1,18 @@
+.loading{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App{
+    animation: focusApp 1s;
+    background-color: var(--background-color);
+}
+
+@keyframes focusApp{
+    0% {filter: blur(10px);}
+    100% {filter: blur(0px);}
+}

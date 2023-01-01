@@ -11,14 +11,14 @@
         }
     }
 
-    li{
+    ul{
         width: 100%;
-        list-style: none;
         display: flex;
         justify-content: flex-end;
 
-        ul{
+        li{
             display: flex;
+            list-style: none;
             
             a{
                 text-decoration: none;
@@ -75,5 +75,13 @@
             }
         }
 
+    }
+}
+
+@media screen and (max-width: 920px){
+    .navigation{
+        li{
+            justify-content: center;
+        }
     }
 }

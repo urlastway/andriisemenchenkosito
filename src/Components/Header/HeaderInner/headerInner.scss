@@ -37,7 +37,7 @@
                         -3px -3px 10px #202020;
         }
         &-text{
-            width: 1200px;
+            width: 60%;
             content: '';
             position: absolute;
             color: #fff;
@@ -51,6 +51,28 @@
                 color: #fff;
                 text-transform: uppercase;
                 font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .headerInner{
+        &-secound-content{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            video{
+                width: 100%;
+                height: 500px;
+                overflow: hidden;
+                object-fit: cover;
+            }
+
+            &-text{
+                width: 70%;
             }
         }
     }
