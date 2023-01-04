@@ -1,0 +1,18 @@
+.info-item{
+    width: 100%;
+    margin: 20px;
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    p{
+        color: var(--background-color);
+        font-size: 25px;
+        font-weight: 600;
+    }
+}

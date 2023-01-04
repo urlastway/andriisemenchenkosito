@@ -1,16 +1,54 @@
 .informations{
     width: 100%;
-    height: 100vh;
+
+    h2{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+    }
     
     .title{
         width: 100%;
         height: 50px;
+        color: #fff;
+    }
+    &-items{
+        width: 100%;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+
+        &-frontEnd{
+            width: 50%;
+            
+        }
+        &-backEnd{
+            width: 50%;   
+        }
+        .InfoItemList{
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 }
 
-h1{
-    color: #ffff;
-}
+@media screen and (max-width: 920px){
+            
+    .informations{
+
+        &-items{
+            display: flex;
+            flex-wrap: wrap;
+
+            &-frontEnd{
+                width: 100%;
+            }
+            &-backEnd{
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            &-frontEnd, &-backEnd{
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    }
