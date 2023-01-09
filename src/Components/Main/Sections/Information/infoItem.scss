@@ -9,10 +9,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    box-shadow:  3px 3px 10px #202020,
+                        -3px -3px 10px #202020;
+
+    img{
+        width: 80px;
+    }
     
     p{
         color: var(--background-color);
         font-size: 25px;
         font-weight: 600;
     }
+}
+
+.info-item:hover{
+    background-color:  rgb(194, 194, 194);
+    transition: .3s;
 }
