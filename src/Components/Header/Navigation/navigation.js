@@ -13,7 +13,7 @@ export default function navigation() {
             </div>
             <ul>
                 <li>
-                    <a href='#'>
+                    <a href='/#'>
                         <div className='navigation-round'>
                             <FontAwesomeIcon icon={faHouse} className='icon-navigation'/>
                         </div>
@@ -23,7 +23,7 @@ export default function navigation() {
                     </a>
                 </li>
                 <li>
-                    <a href='#'>
+                    <a href='/#'>
                         <div className='navigation-round'>
                             <FontAwesomeIcon icon={faUser} className='icon-navigation'/>
                         </div>
@@ -33,7 +33,7 @@ export default function navigation() {
                     </a>
                 </li>
                 <li>
-                    <a href='#'>
+                    <a href='/#'>
                         <div className='navigation-round'>
                             <FontAwesomeIcon icon={faAddressCard} className='icon-navigation'/>
                         </div>
@@ -43,7 +43,7 @@ export default function navigation() {
                     </a>
                 </li>
                 <li>
-                    <a href='#'>
+                    <a href='/#'>
                         <div className='navigation-round purple'>
                             <FontAwesomeIcon icon={faFolder} className='icon-navigation'/>
                         </div>

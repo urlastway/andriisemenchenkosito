@@ -1,16 +1,16 @@
 import React from "react";
-import Informations from './Sections/Information/Informations'
-import Profilo from './Sections/Portfolio/Profilo'
+import Skills from './Sections/skills/Skills'
+import Profilo from './Sections/Profilo/Profilo'
 import './main.scss';
+import Certificati from "./Sections/certificati/certificati";
 
 function Main(){
 
     return(
         <main>
-            <div className="container">
-                <Profilo />
-                <Informations />
-            </div>
+            <Profilo />
+            <Skills />
+            <Certificati />
         </main>
     )
 }

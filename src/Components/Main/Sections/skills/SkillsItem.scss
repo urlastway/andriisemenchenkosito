@@ -1,7 +1,7 @@
-.info-item{
+.skills-item{
     width: 100%;
     margin: 20px;
-    background-color: #fff;
+    background-image: linear-gradient(to right, #b021fd, #ae2cf1, #ab35e6, #a83dda, #a443cf);
     width: 150px;
     height: 150px;
     padding: 20px;
@@ -18,13 +18,13 @@
     }
     
     p{
-        color: var(--background-color);
+        color: #fff;
         font-size: 25px;
         font-weight: 600;
     }
 }
 
-.info-item:hover{
-    background-color:  rgb(194, 194, 194);
-    transition: .3s;
+.skills-item:hover{
+
+    background-image: linear-gradient(to right, #ce74ff, #cb73f8, #c871f2, #c470eb, #c16fe5);
 }

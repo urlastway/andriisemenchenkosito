@@ -1,6 +1,6 @@
-.informations{
+.skills{
     width: 100%;
-    height: 100vh;
+    height: auto;
 
     h2{
         color: #fff;
@@ -24,7 +24,7 @@
         &-backEnd{
             width: 50%;   
         }
-        .InfoItemList{
+        .skillsItemList{
             display: flex;
             flex-wrap: wrap;
         }
@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 920px){
             
-    .informations{
+    .skills{
 
         &-items{
             flex-wrap: wrap;
@@ -44,7 +44,7 @@
                 width: 100%;
                 flex-wrap: wrap;
 
-                .InfoItemList{
+                .skillsItemList{
                     justify-content: center;
                 }
             }

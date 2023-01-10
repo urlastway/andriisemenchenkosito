@@ -1,0 +1,22 @@
+.animation{
+    animation: mymove 3s infinite;
+    position: relative;
+}
+
+@keyframes mymove {
+    0%   {transform: rotate(10deg);}
+    30% {transform: rotate(-10deg);}
+    60% {transform: rotate(10deg);}
+    70% {top: 0; transform: rotate(0deg);}
+    80% {top: 70px}
+    100% {top: -900px}
+  }
+
+.animationSlider{
+    animation: mySlider 2s;
+}
+
+@keyframes mySlider{
+    0% {left: -800px}
+    100% {left: 0px}
+}
