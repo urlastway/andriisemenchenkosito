@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SkillsItemList from "./SkillsItemList";
+import { useInView } from 'react-intersection-observer';
+import mySkills from './Skills.module.scss';
 import './Skills.scss';
 import css from '../../../../img-skills/css.png';
 import bootstrap from '../../../../img-skills/bootstrap.png';
@@ -56,25 +58,29 @@ export default function Skills(){
         }, 3000);
       });
 
+      const { ref: skillsRef, inView: SkillsView} = useInView();
+
     return(
-        <div className="skills">
-            <div className="container">
-                <h1 className="title">{information[index].title}</h1>
-                <div className="skills-items">
-                    <div className="skills-items-frontEnd">
-                        <h2>{titleInformations[0].title}</h2>
-                        <div className="skillsItemList">
-                            <SkillsItemList posts = {titleFronts}/>
+        <>
+            <div className="skills" ref={skillsRef}>
+                <div className="container">
+                    <h1 className="title">{information[index].title}</h1>
+                    <div className="skills-items">
+                        <div className={`skills-items-frontEnd ${SkillsView ? mySkills.animationSkillsLeft : ''}`}>
+                            <h2>{titleInformations[0].title}</h2>
+                            <div className="skillsItemList">
+                                <SkillsItemList posts = {titleFronts}/>
+                            </div>
                         </div>
-                    </div>
-                    <div className="skills-items-backEnd">
-                        <h2>{titleInformations[1].title}</h2>
-                        <div className="skillsItemList">
-                            <SkillsItemList posts = {titleBacks}/>
+                        <div className={`skills-items-backEnd ${SkillsView ? mySkills.animationSkillsRight : ''}`}>
+                            <h2>{titleInformations[1].title}</h2>
+                            <div className="skillsItemList">
+                                <SkillsItemList posts = {titleBacks}/>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

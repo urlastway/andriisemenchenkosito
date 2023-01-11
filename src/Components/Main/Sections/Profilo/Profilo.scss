@@ -1,30 +1,53 @@
+.profilo-main{
+
+    &-background{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+
+        video{
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;        
+        }
+
+    }
+}
+
 .profilo{
     width: 100%;
-    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
 
     h1{
         color: #fff;
-        margin: 2rem 0;
+        padding: 2rem 0;
     }
+
     &-background{
-        position: absolute;
-        width: 70%;
+        width: 100%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        
 
         img{
             width: 700px;
             border-radius: 30px;
+            border: 2px solid #fff;
         }
     }
     &-content{
         width: 100%;
         display: flex;
         position: relative;
-        content: '';
-        top: 0;
-        left: 0;
+        top: -480px;
 
 
         &-left{
@@ -42,6 +65,7 @@
                 border-radius: 30px;
                 box-shadow:  3px 3px 10px #202020,
                 -3px -3px 10px #202020;
+                border: 2px solid #fff;
     
                 &-title{
                     color: #fff;
@@ -64,7 +88,7 @@
                 margin: 40px 0 ;
                 width: 100%;
                 display: flex;
-                justify-content: center;
+                justify-content: center; 
 
                 &-PreSlide, &-NextSlide{
                     margin: 0 30px;
@@ -73,6 +97,7 @@
                     border: .15rem solid;
                     box-shadow:  1px 1px 3px #202020,
                     -1px -1px 3px #202020;
+                    cursor: pointer;
                     
                     p{
                         font-size: 1.2rem;
@@ -133,7 +158,10 @@
         .profilo-background{
             display: none;
         }
+        
         &-content{
+            top: -50px;
+
             &-left{
                 width: 100%;
 

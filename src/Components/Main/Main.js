@@ -9,7 +9,9 @@ function Main(){
     return(
         <main>
             <Profilo />
-            <Skills />
+            <div className="Skills">
+                <Skills />
+            </div>
             <Certificati />
         </main>
     )

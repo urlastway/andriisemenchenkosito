@@ -1,0 +1,19 @@
+.animationSkillsLeft{
+    animation: skillsLeft 2s;
+    position: relative;
+}
+
+.animationSkillsRight{
+    animation: skillsRight 2s;
+    position: relative;
+}
+
+@keyframes skillsLeft{
+    0% {left: -600px}
+    100% {left: 0px}
+}
+
+@keyframes skillsRight{
+    0% {right: -600px}
+    100% {right: 0px}
+}

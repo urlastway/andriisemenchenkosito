@@ -34,8 +34,12 @@ function App() {
       :
       <div className='App'>
         <div className='App-components'>
-          <Header />
-          <Main />
+          <div className='header'>
+            <Header />
+          </div>
+          <div className='main'>
+            <Main />
+          </div>
         </div>
       </div>
       }

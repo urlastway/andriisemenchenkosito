@@ -28,7 +28,7 @@ export default function navigation() {
                             <FontAwesomeIcon icon={faUser} className='icon-navigation'/>
                         </div>
                         <p>
-                            Who I am?
+                            Profilo
                         </p>
                     </a>
                 </li>
@@ -38,7 +38,7 @@ export default function navigation() {
                             <FontAwesomeIcon icon={faAddressCard} className='icon-navigation'/>
                         </div>
                         <p>
-                            Contact Me
+                            Contattami
                         </p>
                     </a>
                 </li>
